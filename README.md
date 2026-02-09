@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+🌸 Pinned To-Do Desktop App
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cozy, aesthetic, always-on-top To-Do app built with Electron + React + TypeScript.
+Designed to sit gently on your desktop while keeping your tasks simple and beautiful. ✨
 
-Currently, two official plugins are available:
+<img src="screenshots/home.png" width="600"/> </div>
+🌿 About the App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pinned To-Do is a visually calming desktop productivity app that:
 
-## React Compiler
+🪟 Runs as a lightweight desktop window
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📌 Can stay pinned on top of other apps
 
-## Expanding the ESLint configuration
+🎨 Features a soft, warm, minimal aesthetic
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📝 Lets you create, check off, and manage tasks
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🖥️ Works across desktop environments (Electron-based)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+⚠️ Status: Work in Progress (WIP) — features are still being actively developed.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Built With
+Technology	Purpose
+Electron	Desktop window & system integration
+React	UI and component structure
+TypeScript	Type-safe development
+Node.js	Backend & runtime
+CSS / SCSS	Styling & theming
+✨ Current Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Home screen with welcoming UI
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Main task page navigation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Clean, soft color palette
+
+Minimal, distraction-free design
+
+Desktop window frame
+
+Custom buttons & UI styling
+
+🚧 Planned Features
+
+✅ Add / delete tasks
+
+✅ Drag-and-drop task ordering
+
+✅ Task categories
+
+✅ Reminders & notifications
+
+✅ Save tasks locally
+
+✅ Theme variations (beige, pastel, dark mode)
+
+✅ System tray minimization
+
+📦 Installation (for now)
+
+(Subject to change as the project matures.)
+
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd your-repo
+npm install
+npm run dev
+
+🎨 Design Philosophy
+
+This app is meant to feel:
+
+Soft, warm, and calming
+
+Minimal but expressive
+
+Like a sticky note that lives on your screen
+
+More aesthetic than strict productivity apps
+
+Think: “Cozy desk companion” rather than “corporate task manager.”
+
+📸 Screenshots
+Home Screen	Main Page
+
+	Coming soon
+
+(Create a folder named screenshots/ in your repo and drop images there.)
+
+👤 Author
+
+Built by Humza Baig
+
+GitHub: @humza2244
+
+Portfolio: add your link here

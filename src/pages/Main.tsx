@@ -1,11 +1,12 @@
 import Taskbar from "../Components/Taskbar";
 import { useNavigate } from "react-router-dom";
 import "./Main.css"
-import { useEffect, useState } from "react";
+import TodoList from "../Components/toDoList";
 
 type HomeProps = {
   onClearClouds: () => void;
 };
+
 
 export default function Main({ onClearClouds }: HomeProps) {
 
@@ -17,10 +18,7 @@ export default function Main({ onClearClouds }: HomeProps) {
                 <h1>To Do</h1>
             </div>
             <div className="content">
-                <input type="text" className="taskInput" placeholder="Add a new task..." />
-                <ul className="taskList">
-                    <li className="taskItem">Sample Task 1</li> 
-                </ul>
+                <TodoList />
             </div>
             <button onClick={() => navigate("/home")} className="return">←</button>
             <button className="resetBtn" onClick={onClearClouds}>↻</button>

@@ -1,0 +1,56 @@
+/* Make the app actually fill the window */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.todoListContainer {
+  height: 100%;                 /* IMPORTANT: use 100% now that parents have height */
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  box-sizing: border-box;
+  min-height: 0px;     
+  overflow-y: auto;           /* IMPORTANT in flex layouts */
+}
+
+/* list area must be the scrollable part */
+.todoListContainer ul {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* This is the key: allow the list section to shrink and scroll */
+.listArea {
+  flex: 1;
+  min-height: 0;                /* THIS prevents the input from being pushed off-screen */
+  overflow-y: auto;
+}
+
+/* UL should NOT be flex */
+.listArea ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Input always visible at bottom */
+.inputSection {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inputText {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+}
+
+.listTitle{
+    padding: 0px;
+}

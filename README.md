@@ -3,6 +3,7 @@
 
 A cozy, aesthetic, always-on-top To-Do app built with Electron + React + TypeScript.
 Designed to sit gently on your desktop while keeping your tasks simple and beautiful. ✨
+</div>
 
 🌿 About the App
 Pinned To-Do is a visually calming desktop productivity app that:

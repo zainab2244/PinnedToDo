@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌸 **Pinned To-Do Desktop App**
 
-Currently, two official plugins are available:
+**A cozy, aesthetic, always-on-top To-Do app built with Electron + React + TypeScript.**  
+Designed to sit gently on your desktop while keeping your tasks simple and beautiful. ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌿 About the App  
 
-## Expanding the ESLint configuration
+**Pinned To-Do** is a visually calming desktop productivity app that:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🪟 Runs as a lightweight desktop window  
+- 📌 Can stay pinned on top of other apps  
+- 🎨 Features a soft, warm, minimal aesthetic  
+- 📝 Lets you create, check off, and manage tasks  
+- 🖥️ Works across desktop environments (Electron-based)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+> ⚠️ **Status:** *Work in Progress (WIP)* — features are still being actively developed.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Built With  
+
+- **Electron** — Desktop window & system integration  
+- **React** — UI and component structure  
+- **TypeScript** — Type-safe development  
+- **Node.js** — Backend & runtime  
+- **CSS / SCSS** — Styling & theming  
+
+---
+
+## ✨ Current Features  
+
+- Home screen with welcoming UI  
+- Main task page navigation  
+- Clean, soft color palette  
+- Minimal, distraction-free design  
+- Desktop window frame  
+- Custom buttons & UI styling  
+
+---
+
+## 🚧 Planned Features  
+
+- ✅ Add / delete tasks  
+- ✅ Drag-and-drop task ordering  
+- ✅ Task categories  
+- ✅ Save tasks locally  
+- ✅ Theme variations (beige, pastel, dark mode)  
+- ✅ System tray minimization  
+
+---
+
+## 📦 Installation (for now)
+
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd your-repo
+npm install
+npm run dev        # run in browser
+npm run electron   # run as desktop app
 ```
+---
+👤 Author
+Built by Zainab Baig | GitHub: @zainab2244 | Portfolio: https://github.com/zainab2244
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---

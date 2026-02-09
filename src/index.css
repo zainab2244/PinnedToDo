@@ -1,0 +1,120 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+ 
+  border-radius: 20px;
+
+
+  --dark-color: #735A5A;
+  --light-color: #FFE4E1;
+  --secondary-color: #F291A3;
+  --accent-color: #FEB3B8;
+  --secondary-accent-color: #A0CED9;
+  --tertiary-accent-color: #f1d7d4;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: none;
+  box-shadow: none;
+}
+
+[data-theme="beige"] {
+  --dark-color: #A66D3C;
+  --light-color: #F3E4CF;
+  --secondary-color: #E4C0AA;
+  --accent-color: #BEBFC3;
+  --secondary-accent-color: #B4B6A1 ;
+  --tertiary-accent-color: #e0d3c0;
+}
+
+[data-theme="purple"] {
+  --dark-color: #563240;
+  --light-color: #f3eafa;
+  --secondary-color: #e8dafa;
+  --accent-color: #B995B9;
+  --secondary-accent-color: #F49591;
+  --tertiary-accent-color: #d7cfdd;
+}
+
+[data-theme="blue"] {
+  --dark-color: #8A99C4;
+  --light-color: #EAF3FA;
+  --secondary-color: #9DC8E8;
+  --accent-color: #BFDCFA;
+  --secondary-accent-color: #5078E9;
+  --tertiary-accent-color: #cddeeb;
+}
+
+[data-theme="pink"] {
+  --dark-color: #735A5A;
+  --light-color: #FFE4E1;
+  --secondary-color: #F291A3;
+  --accent-color: #FEB3B8;
+  --secondary-accent-color: #A0CED9;
+  --tertiary-accent-color: #f1d7d4;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

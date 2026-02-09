@@ -1,0 +1,74 @@
+.taskBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    box-sizing: border-box;
+    border-bottom: var(--dark-color) 3px solid;
+    z-index: 3;
+    -webkit-app-region: drag;
+    user-select: none;
+}
+
+button, input{
+    user-select: none;
+}
+
+p{
+    color: var(--dark-color);
+}
+
+.winBtns{
+    display: flex;
+    gap: 0.5em;
+    -webkit-app-region: no-drag;
+}
+
+.taskBtns{
+    width: 10px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--light-color);
+    border: var(--dark-color) 2px solid;
+    color: var(--dark-color);
+    font-weight: bold;
+    padding: 0px 15px 0px 6px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-app-region: no-drag;
+}
+
+.taskBtns.min{
+    padding: 0px 15px 0px 4px;
+}
+
+.taskBtns.max{
+    padding: 0px 15.5px 0px 4.5px;
+    line-height: 3px;
+}
+
+.taskBtns:hover{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    cursor: pointer;
+    border: var(--light-color) 1px solid;
+    transform: none;
+}
+
+.taskBtns:focus-visible{
+    outline: none;
+    box-shadow: none;
+}
+
+.taskBtns:focus{
+    outline: none;
+    box-shadow: none;
+}
